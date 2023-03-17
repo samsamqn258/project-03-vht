@@ -354,13 +354,12 @@ a {
     padding: 44px;
     border: 16px solid #eaf6ff;
     border-radius: 4px;
-    transition: ease-in .25s;
+    transition: ease-in 0.25s;
 }
 
 .work-item:hover {
     transform: translateY(-16px);
-    border: 16px solid #2E80CE;
-    
+    border: 16px solid #2e80ce;
 }
 
 .work-item__heading {
@@ -386,4 +385,135 @@ a {
     font-size: 1.6rem;
     line-height: 1.75;
     color: #2e80ce;
+}
+
+/* feature */
+.feature {
+    margin-top: 85px;
+    padding: 85px 0;
+}
+
+.feature__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 130px;
+}
+
+.feature__media {
+    width: 49%;
+}
+
+.feature__images {
+    position: relative;
+    padding: 0 58px 121px 0;
+}
+
+.feature__img {
+    width: 512px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.feature__img:last-child {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 332px;
+}
+
+.feature__cta {
+    margin-top: 38px;
+}
+
+/* member */
+.member {
+    padding: 85px 0;
+}
+
+.member__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member__cta {
+    margin: 38px;
+}
+
+.member__list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+}
+
+.member-item {
+    text-align: center;
+}
+
+.member-item:hover .member-item__thumb {
+    transform: scale(1.1);
+}
+
+.member-item__img-bg {
+    padding-top: 28px;
+    overflow: hidden;
+    background: #eaf6ff;
+    border-radius: 6px;
+}
+
+.member-item__thumb {
+    display: block;
+    max-width: 100%;
+    height: 290px;
+    object-fit: cover;
+    transition: ease-in .25s;
+}
+
+.member-item__name {
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    color: #10375c;
+}
+
+.member-item__title {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #575f66;
+}
+
+.member__control {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 38px;
+}
+
+.member__control-btn:hover {
+    border: 1px solid #2E80CE;
+    background: #2E80CE;
+    color: #fff;
+}
+
+.member__control-btn {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #575F66;
+    overflow: hidden;
+    color: #575F66;
+    background: #fff;
+    transition: ease .25s;
+}
+
+.member__control-next-icon {
+    rotate: 180deg;
 }
