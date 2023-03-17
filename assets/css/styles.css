@@ -468,7 +468,7 @@ a {
     max-width: 100%;
     height: 290px;
     object-fit: cover;
-    transition: ease-in .25s;
+    transition: ease-in 0.25s;
 }
 
 .member-item__name {
@@ -495,8 +495,8 @@ a {
 }
 
 .member__control-btn:hover {
-    border: 1px solid #2E80CE;
-    background: #2E80CE;
+    border: 1px solid #2e80ce;
+    background: #2e80ce;
     color: #fff;
 }
 
@@ -507,13 +507,54 @@ a {
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    border: 1px solid #575F66;
+    border: 1px solid #575f66;
     overflow: hidden;
-    color: #575F66;
+    color: #575f66;
     background: #fff;
-    transition: ease .25s;
+    transition: ease 0.25s;
 }
 
 .member__control-next-icon {
     rotate: 180deg;
+}
+
+/* Install */
+.install {
+    margin-top: 180px;
+}
+
+.install__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    background: #2e80ce;
+    border-radius: 4px;
+}
+
+.install__img {
+    display: block;
+    width: 284px;
+    height: 522px;
+    margin-top: -95px;
+    object-fit: cover;
+}
+
+.install__content {
+    max-width: 586px;
+}
+
+.install__heading,
+.install__desc {
+    color: #fff;
+}
+
+.install__heading {
+    max-width: 489px;
+}
+
+.install__row {
+    display: flex;
+    column-gap: 28px;
+    margin-top: 38px;
 }
