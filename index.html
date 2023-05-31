@@ -97,7 +97,7 @@
     </head>
     <body>
         <!-- Header -->
-        <header class="header">
+        <header class="header header__fixed">
             <div class="container">
                 <!-- Header-top -->
                 <div class="header-top">
@@ -118,20 +118,24 @@
                         <ul class="navbar__list">
                             <li class="navbar__item">
                                 <a
-                                    href="#!"
+                                    href="#"
                                     class="navbar__link navbar__link--active"
                                 >
                                     Home
                                 </a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#!" class="navbar__link">Services</a>
+                                <a href="#service" class="navbar__link">
+                                    Services
+                                </a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#!" class="navbar__link">About</a>
+                                <a href="#work" class="navbar__link">About</a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#!" class="navbar__link">Doctors</a>
+                                <a href="#Doctors" class="navbar__link"
+                                    >Doctors</a
+                                >
                             </li>
                         </ul>
                     </nav>
@@ -143,47 +147,51 @@
                         </button>
                     </div>
                 </div>
-                <!-- Hero -->
-                <section class="hero">
-                    <!-- hero content -->
-                    <section class="hero__content">
-                        <h1 class="hero__heading">
-                            Exceptional dental care for all ages.
-                        </h1>
-                        <p class="hero__desc">
-                            Exceptional dental care for all ages. Your great
-                            smile begins with a great dentist.
-                        </p>
-                        <div class="hero__row">
-                            <a href="#!" class="btn">Book Online</a>
-                            <span class="hero__contact"
-                                >or call (123) 456-7890</span
-                            >
-                        </div>
-                    </section>
-                    <!-- hero media -->
-                    <div class="hero__media">
-                        <figure class="hero__images">
-                            <img
-                                src="./assets/img/hero-2.jpg"
-                                alt="dental"
-                                class="hero__img"
-                            />
-                            <img
-                                src="./assets/img/hero-6.jpg"
-                                alt="dental"
-                                class="hero__img"
-                            />
-                        </figure>
-                    </div>
-                </section>
             </div>
         </header>
 
         <!-- Main -->
         <main>
+            <!-- Hero -->
+            <section class="hero tab-pane">
+                <!-- hero content -->
+                <div class="container">
+                    <section class="hero__body">
+                        <section class="hero__content">
+                            <h1 class="hero__heading">
+                                Exceptional dental care for all ages.
+                            </h1>
+                            <p class="hero__desc">
+                                Exceptional dental care for all ages. Your great
+                                smile begins with a great dentist.
+                            </p>
+                            <div class="hero__row">
+                                <a href="#!" class="btn">Book Online</a>
+                                <span class="hero__contact"
+                                    >or call (123) 456-7890</span
+                                >
+                            </div>
+                        </section>
+                        <!-- hero media -->
+                        <div class="hero__media">
+                            <figure class="hero__images">
+                                <img
+                                    src="./assets/img/hero-2.jpg"
+                                    alt="dental"
+                                    class="hero__img"
+                                />
+                                <img
+                                    src="./assets/img/hero-6.jpg"
+                                    alt="dental"
+                                    class="hero__img"
+                                />
+                            </figure>
+                        </div>
+                    </section>
+                </div>
+            </section>
             <!-- Service -->
-            <section class="service">
+            <section class="service tab-pane" id="service">
                 <div class="container">
                     <h2 class="service__heading section-heading">
                         Our services
@@ -288,7 +296,7 @@
             </section>
 
             <!-- Work -->
-            <section class="work">
+            <section class="work tab-pane" id="work">
                 <div class="container">
                     <h2 class="section-heading">How it works</h2>
                     <p class="section-desc work__desc">
@@ -380,7 +388,7 @@
             </section>
 
             <!-- Member -->
-            <section class="member">
+            <section class="member tab-pane" id="Doctors">
                 <div class="container">
                     <div class="member__heading">
                         <h2 class="section-heading">Our virtual dentist</h2>
@@ -838,5 +846,6 @@
                 </div>
             </div>
         </footer>
+        <script src="./app.js"></script>
     </body>
 </html>
